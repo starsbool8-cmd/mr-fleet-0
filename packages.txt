@@ -1,5 +1,0 @@
-curl
-tar
-cpulimit
-tor
-torsocks
